@@ -1,0 +1,30 @@
+.table {
+    height          : 500px;
+    width           : 100%;
+    overflow-y      : scroll;
+    color           : rgba(0, 0, 0, 0.87);
+    background-color: rgb(255, 255, 255);
+
+    & tr {
+        display        : flex;
+        justify-content: space-between;
+
+        &:nth-of-type(odd) {
+            color           : rgba(0, 0, 0, 0.87);
+            background-color: rgba(0, 0, 0, 0.04);
+        }
+    }
+
+    & td {
+        padding        : 0.4rem;
+        display        : flex;
+        justify-content: center;
+        align-items    : center;
+    }
+}
+
+.info-fla {
+    height       : 30%;
+    width        : 60%;
+    border-radius: 10%;
+}

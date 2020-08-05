@@ -1,0 +1,12 @@
+.cardInfo {
+    cursor: pointer;
+
+    .MuiCardContent-root {
+        padding: 10px;
+
+        &:last-child {
+            padding-bottom: 5px;
+
+        }
+    }
+}

@@ -1,0 +1,8 @@
+.covidMap {
+  height  : 508px;
+  overflow: hidden;
+
+  & .leaflet-container {
+    height: 100%;
+  }
+}

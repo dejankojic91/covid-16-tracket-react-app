@@ -1,0 +1,35 @@
+.covidMapInfo {
+  width: 150px;
+
+  &__flag {
+
+    height         : 80px;
+    width          : 100%;
+    background-size: cover;
+    border-radius  : 8px;
+
+    img {
+      width        : 100px;
+      border-radius: 5px;
+    }
+  }
+
+  &__name {
+    font-size         : 18px;
+    font-weight       : bold;
+    color             : #555;
+    display           : flex;
+    align-items       : center;
+
+    .MuiAvatar-root {
+      margin-right: 8px;
+    }
+  }
+
+  &__confirmed,
+  &__recovered,
+  &__deaths {
+    font-size : 13px;
+    margin-top: 3px;
+  }
+}
