@@ -113,8 +113,8 @@ function App() {
           </div>
         </Grid>
         <Grid item xs={12} sm={4} md={5}>
+        <h4>Confirmed Casses by Country</h4>
           <div className="covidApp__countryTable">
-            <h4>Confirmed Casses by Country</h4>
             <Table tableCountriesData={tableCountryData} />
           </div>
         </Grid>
