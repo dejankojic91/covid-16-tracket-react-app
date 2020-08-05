@@ -1,6 +1,6 @@
 # [COVID-19 Tracker React Application]
 
-## Technologies used 🛠️
+## Technologies used
 
 - [React](https://es.reactjs.org/) - Front-End JavaScript library
 - [Material UI](https://material-ui.com/) - React UI Framework
