@@ -59,8 +59,6 @@ function App() {
   return (
     <div className="covidApp">
       <Navbar />
-
-
       <Grid container spacing={1}>
         <Grid item xs={12} sm={9} md={10}>
           <CovidMap
@@ -106,13 +104,10 @@ function App() {
               handleClick={() => setCaseType("deaths")}
             />
           </div>
-
         </Grid>
         <Grid item xs={12} sm={8} md={7}>
           <div className="covidApp__chart">
-
             <h4>Global new {caseType}</h4>
-
             <Chart caseType={caseType} />
           </div>
         </Grid>
@@ -123,10 +118,6 @@ function App() {
           </div>
         </Grid>
       </Grid>
-
-
-
-
     </div >
   );
 }

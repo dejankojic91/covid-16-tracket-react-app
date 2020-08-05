@@ -1,5 +1,3 @@
-
-
 export const casesColors = {
     cases: {
         hex: "#0000ff",
