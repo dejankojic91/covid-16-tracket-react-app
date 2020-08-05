@@ -1,6 +1,6 @@
 # [COVID-19 Tracker React Application]
 
-<a href="https://ibb.co/pRwGrDT"><img src="https://i.ibb.co/9Vgz3X0/imageedit-2-3164756181.png" alt="imageedit-2-3164756181" border="0"></a>
+<img src="https://i.ibb.co/9Vgz3X0/imageedit-2-3164756181.png" alt="imageedit-2-3164756181" border="0">
 
 ## Technologies used
 
