@@ -70,7 +70,7 @@ const Chart = ({ caseType }) => {
 
     useEffect(() => {
         const getChartData = async () => {
-            await featchDataForSpecificTime(120)
+            await featchDataForSpecificTime(90)
                 .then((response) => {
                     let data = createDataForChart(response.data, caseType);
                     setChartData(data)
