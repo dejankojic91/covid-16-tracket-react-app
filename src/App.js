@@ -70,6 +70,7 @@ function App() {
         </Grid>
         <Grid item xs={12} sm={3} md={2}>
           <div className="covidApp__countryPicker">
+            <h4>Select Country:</h4>
             <CountryPicker country={country} countries={countries} handleCountryChange={handleCountryChange} />
           </div>
           <div className="covidApp__cardContainer">
