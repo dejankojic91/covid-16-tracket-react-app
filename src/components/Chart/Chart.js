@@ -49,16 +49,19 @@ const options = {
 const createDataForChart = (data, casesType) => {
     let chartData = [];
     let lastDataPoint;
-    for (let date in data.cases) {
-        if (lastDataPoint) {
-            let newDataPoint = {
-                x: date,
-                y: data[casesType][date] - lastDataPoint,
-            };
-            chartData.push(newDataPoint);
+    if (data && data.cases) {
+        for (let date in data.cases) {
+            if (lastDataPoint) {
+                let newDataPoint = {
+                    x: date,
+                    y: data[casesType][date] - lastDataPoint,
+                };
+                chartData.push(newDataPoint);
+            }
+            lastDataPoint = data[casesType][date];
         }
-        lastDataPoint = data[casesType][date];
     }
+
     return chartData;
 };
 
@@ -67,7 +70,7 @@ const Chart = ({ caseType }) => {
 
     useEffect(() => {
         const getChartData = async () => {
-            await featchDataForSpecificTime(30)
+            await featchDataForSpecificTime(120)
                 .then((response) => {
                     let data = createDataForChart(response.data, caseType);
                     setChartData(data)
